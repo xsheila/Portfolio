@@ -1,0 +1,417 @@
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Navigation Bar */
+
+#home {
+  background-color:  #023047;
+  padding-bottom: 1cm;
+  margin-left:-1cm;
+  margin-right:-1cm;
+  margin-top:-1cm;
+  padding-top: 1cm;
+  padding-bottom: 2cm;
+  height: 3mm;
+ }
+
+ .contact_info img:hover {
+    filter: hue-rotate(240deg); /* Adjust the hue rotation angle as needed */
+}
+
+
+.topdiv {
+  float: right;
+  padding-right: 1cm;
+  transform: translateY(15px);
+}
+
+.topdiv {
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .topdiv * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+  
+  .topdiv li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+  }
+  
+  .topdiv a {
+    padding: .5em .8em;
+    color: white;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .topdiv a::before,
+  .topdiv a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .topdiv a:hover {
+    color: #16719e;
+  }
+
+.topdiv a {
+    color: white; /* Set the initial text color */
+    transition: color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.profileGif .profile_image{
+    width: 350px;
+}
+
+.profile_name {
+  float: left;
+  padding-left: 2cm;
+  color: white;
+  /* Add the styles here */
+}
+
+.profile_name .contact_info {
+  font-size: 15px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+
+.contact_info img {
+  width:25px;
+  margin-right: 10px;
+  float:left;
+}
+
+.profile_name .contact_info a {
+  color: white;           /* makes the link white */
+  text-decoration: none;  /* removes underline */
+}
+
+.profile_name .contact_info a:hover {
+  color: #16719e;         /* optional hover color */
+  text-decoration: underline; /* optional */
+}
+
+
+/* Titles */
+
+h2 {
+  text-align: justify;
+  font-size: 50px;
+  text-align: center;
+  float: left;
+  color: #16719e;
+  margin: 30px;
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.introduction {
+  text-align: justify;
+  font-size: 30px;
+  text-align: center;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  animation-duration: 5s;
+  position: relative;
+}
+
+/* Used in the About Me sections */
+
+.container {
+  /* display: flex; */
+  display: block;
+}
+
+/* About Me */
+
+.about-me {
+  /* display: flex; */
+  /* align-items: center; */
+  margin-bottom: 40px; /* space before Skills section */
+}
+
+#about-me h1 {
+  font-size: 30px;
+  margin-top: 20px;
+  /* margin-top: 90px; */
+  color: #16719e;
+  text-align: left;
+}
+
+#about-me p {
+  font-size: 15px;
+  /* color: rgb(40, 5, 136); */
+  color: black;
+  margin-top: 10px;
+  line-height: 1.5; 
+}
+
+.profile_image {
+  width: 550px;
+  height: fit-content;
+  vertical-align: middle;
+  margin: 5px;
+}
+
+.about-me-desc{
+  /* transform: none; */
+  transform: none;  /* remove the lift */
+  max-width: 700px; /* keeps text nicely sized */
+  margin: 0 auto;   /* centers text horizontally */
+  text-align: j;
+}
+
+/* Projects */
+
+.projects-container {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.projects-container hr {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin-left: 5cm;
+}
+
+.project-card {
+  margin: 0 15px 15px 30px;
+  padding-bottom: 5px;
+}
+
+.project-card h3 {
+  font-size: 25px;
+  margin-left: 30px;
+  color: #16719e;
+}
+
+.project-section h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  margin-left: 70px;
+}
+
+.project-section p {
+  font-size: 15px;
+  margin-bottom: 8px;
+  margin-left: 90px;
+}
+
+.project-card li {
+  font-size: 15px;
+  margin-left: 70px;
+}
+
+.project-section iframe {
+  display: block;
+  margin: 20px auto;
+}
+
+/* Certificate logo image: mini card effect */
+.project-image {
+  max-width: 50%;                     /* responsive */
+  height: auto;
+  display: block;
+  margin: 20px auto;                       /* center inside card */
+  padding: 10px;                        /* mini card padding */
+  background-color: #fff;               /* mini card background */
+  border-radius: 10px;                  /* rounded corners */
+  border: 2px solid #ccc;               /* subtle border */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15); /* shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect on image mini card */
+.project-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* Certificates */
+
+.certificate-container {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.certificate-container hr { 
+  border: 1px solid lightgray;
+  width: 75%;
+  margin-left: 5cm;
+}
+
+/* Main certificate card: wraps text + image */
+.certificate-card {
+  margin: 0 15px 15px 30px;
+  padding-bottom: 5px;
+}
+
+/* Text inside card */
+.certificate-content {
+  margin-bottom: 20px;  /* space between text and image */
+}
+
+.certificate-content h3 {
+  font-size: 25px;   /* same as project h3 */
+  margin-left: 30px; /* same left margin as project h3 */
+  margin-top: 0;     /* optional, removes extra top spacing */
+}
+
+.certificate-card h3 { 
+  font-size: 25px; 
+  margin-left: 30px; 
+}
+
+.certificate-card li { 
+  font-size: 20px; 
+  margin-left: 30px; 
+}
+
+.certificate-content ul {
+  font-size: 20px;   /* same as your current li */
+  margin-left: 30px; /* aligns with h3 */
+  padding-left: 0;   /* optional: remove default ul padding */
+}
+
+/* Certificate logo image: mini card effect */
+.certificate-logo {
+  max-width: 50%;                     /* responsive */
+  height: auto;
+  display: block;
+  margin: 20px auto;                       /* center inside card */
+  padding: 10px;                        /* mini card padding */
+  background-color: #fff;               /* mini card background */
+  border-radius: 10px;                  /* rounded corners */
+  border: 2px solid #ccc;               /* subtle border */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15); /* shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect on image mini card */
+.certificate-logo:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+/* Links inside certificate card */
+.certificate-card a {
+  color: black;
+  text-decoration: none;
+}
+
+.certificate-card a:hover {
+  color: #16719e;
+  text-decoration: underline;
+}
+
+.certificate-content ul {
+  font-size: 20px;
+  margin-left: 30px; /* aligns with h3 */
+  padding-left: 0;
+}
+
+
+
+/* Hover effect on image mini card */
+.certificate-logo:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+}
+
+
+
+
+
+.socmed ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    
+  }
+  
+  .socmed ul li {
+    list-style: none;
+    margin: 0 15px;
+    width: 100px;
+  }
+  
+  .socmed ul li a {
+    position: relative; 
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+    transition: .5s;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .socmed ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #331df5;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  
+  .socmed ul li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #331df5;
+  }
+  
+  .socmed ul li a:hover {
+    color: #ffffff;
+    box-shadow: 0 0 5px #5482ff;
+    text-shadow: 0 0 5px #ffee10;
+  }
+
+  .circle {
+    height: 24px;
+    width: 24px;
+    border-radius: 24px;
+    background-color: black;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 99999999; /* so that it stays on top of all other elements */
+  }
+
+  

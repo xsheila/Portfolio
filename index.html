@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sheila Lucaser - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Sheila Mae O. Lucaser
+          <div class="contact_info">
+            <i class="fa-solid fa-envelope"></i>&nbsp;
+            <a href="mailto:sheilalucaser@gmail.com">sheilalucaser@gmail.com</a>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <i class="fa-solid fa-phone"></i>&nbsp;
+          <a href="tel:+639764207879">+63 976 420 7879</a>
+        </div>
+        <div class="contact_info">
+          <i class="fa-brands fa-linkedin"></i>&nbsp;
+          <a href="https://www.linkedin.com/in/sheilalucaser/" > linkedin.com/in/sheilalucaser </a>
+        </div>
+
+        </div>
+        <div class="topdiv">
+          <li><a class="topmenu" href="#about-me">About Me</a></li>
+          <!-- <li><a class="topmenu" href="#skills">Skills</a></li> -->
+          <li><a class="topmenu" href="#projects">Projects</a></li>
+          <!-- <li><a class="topmenu" href="#experience">Experience</a></li> -->
+          <li><a class="topmenu" href="#certifications">Certifications</a></li>
+          <!-- <li><a class="topmenu" href="#recommendations">Recommendations</a></li> -->
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <!--  <div class="profileGif">
+        <img src="html_finalprojimages/cute-mochi-mochi.gif" class="profile_image">
+      </div> -->
+
+      <div class="about-me-desc">
+          <h1>
+            Hi, I'm Sheila Lucaser! 
+          </h1> 
+          <p>
+            <br>I have always enjoyed working with data, starting from my college days as a Statistics graduate, where I gained strong theoretical foundations. 
+            I am currently a Data Governance Associate, which has given me hands-on experience in managing and ensuring the quality and integrity of data. I am passionate 
+            about data analytics and enjoy transforming raw data into actionable insights to support data-driven decision-making.
+          </p>
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>POWER BI</h3>
+            <div class="project-section">
+              <h4>Sales of Products</h4>
+              <p>This project analyzes a transactional sales dataset containing information such as Order ID, Product, Quantity Ordered, Price Each, Order Date, and Purchase Address, 
+                along with derived attributes like Month, Sales, City, and Hour. Using Power BI, I performed comprehensive data cleaning and transformation, validated the dataset for 
+                completeness, and created interactive dashboards to uncover key insights, including sales trends over time, product performance, and city-level sales distribution.</p>
+
+              <p>The dataset was sourced from KeithGalli’s GitHub repository and is also available on Kaggle.</p>
+              <iframe title="Sales Dashboard" 
+                      width="900"
+                      height="520"
+                      src="https://app.powerbi.com/view?r=eyJrIjoiN2Q0ZmRlNGUtOTY0OS00YWQ1LWI4NTItYzI5ZDU2OWVjYTFiIiwidCI6Ijc5NGRjZjk0LTA4MTItNGYwZS04ODIxLTJkYjFkNWQ4ZmYyNyIsImMiOjEwfQ%3D%3D"
+                      frameborder="0"
+                      allowFullScreen="true"></iframe>
+            <!--  <img src="html_finalprojimages/sales report.png" alt="Sales Report" class="project-image"> -->
+            <!--  <p class="source-link">
+                <a href="https://app.powerbi.com/view?r=eyJrIjoiN2Q0ZmRlNGUtOTY0OS00YWQ1LWI4NTItYzI5ZDU2OWVjYTFiIiwidCI6Ijc5NGRjZjk0LTA4MTItNGYwZS04ODIxLTJkYjFkNWQ4ZmYyNyIsImMiOjEwfQ%3D%3D"
+                    target="_blank">
+                    Open Dashboard in Power BI
+                </a>
+              </p> -->
+            </div>
+            <div class="project-section">
+              <h4>Data Cleaning and Transformation</h4>
+              <ul>
+                <li>The sales dataset was thoroughly prepared and standardized to ensure accuracy, consistency, and reliability for analysis and visualization in Power BI.</li>
+                <li>All columns were assigned appropriate data types to support correct calculations and consistent formatting.</li>
+                <li>The dataset schema was optimized by renaming columns for clarity, such as converting the blank column to <b>ID</b>, and by selecting only the relevant columns 
+                  required for analysis: <b>Order ID, Product, Quantity Ordered, Price Each, Order Date, Sales, and City</b>. All other columns, including ID, Month, Hour, and 
+                  Purchase Address, were removed to simplify the dataset and focus on analytical needs.</li>
+                <li>A comprehensive data quality check was performed to identify any missing values. All key fields were found to be complete, with no nulls detected, ensuring 
+                  the dataset is reliable for subsequent analysis and visualization.</li>
+              </ul>
+              <h4>Key Findings</h4>
+              <ul>
+                <li>The sales dataset generated a total sales value of $34.49M with a total quantity ordered of 209K units.</li>
+                <li>San Francisco contributed the highest sales at $8.26M, while Austin recorded the lowest at $1.82M.</li>
+                <li>Sales peaked in December ($4.61M), while January recorded the lowest sales at $1.82M.</li>
+                <li>The MacBook Pro Laptop is the top-selling product, accounting for 23.3% of total sales.</li>
+                <li>The AAA Batteries (4-pack) generated the lowest sales at 0.27%.</li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="project-card">
+            <h3>PYTHON PROGRAMMING</h3>
+            <div class="project-section">
+              <h4>Sales of Products</h4>
+              <p>Overview of product sales using Power BI, showing trends, revenue, and product performance across different categories.</p>
+              <img src="html_finalprojimages/sales report.png" alt="Sales Report" class="project-image">
+            </div>
+            <div class="project-section">
+              <h4>Insights</h4>
+              <p>Analysis of sales insights, highlighting key patterns and actionable recommendations.</p>
+              <img src="html_finalprojimages/sales report.png" alt="Sales Report" class="project-image">
+            </div>
+          </div>
+          <div class="project-card">
+            <h3>R PROGRAMMING</h3>
+            <div class="project-section">
+              <h4>Sales of Products</h4>
+              <p>Overview of product sales using Power BI, showing trends, revenue, and product performance across different categories.</p>
+              <img src="html_finalprojimages/sales report.png" alt="Sales Report" class="project-image">
+            </div>
+            <div class="project-section">
+              <h4>Insights</h4>
+              <p>Analysis of sales insights, highlighting key patterns and actionable recommendations.</p>
+              <img src="html_finalprojimages/sales report.png" alt="Sales Report" class="project-image">
+            </div>
+          </div> -->
+    </div>
+    </section>
+
+
+    <!--Certifications-->
+    <section class="certificate" id="certificate">
+      <h2>
+        Certifications
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="certificate-container" class="certificate-container">
+          <div class="certificate-card">
+            <h3>Associate Data Analyst</h3>
+            <ul>
+              <li>Issuer: <a href="https://www.datacamp.com/certificate/DAA0018645186260"> Datacamp </a> </li>
+              <li>Certificate No: DAA0018645186260 </li>
+              <li>Expires: 23 March 2027</li>
+            </ul>
+          </div>
+          <img src="html_finalprojimages/DAA0018645186260.png" alt="Certificate Logo" class="certificate-logo">
+        </div>
+    </section>
+
+    <!--Social Media-->
+    <section id="skills">
+        <h2>Social Media</h2>
+        <div style="clear:both;"></div>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <br><br><br><br><br><br><br>
+        <div class="socmed">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/sheilalucaser/">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/xsheila">
+              <i class="fab fa-github"></i>
+            </a> 
+          </li>
+        </ul>
+    </div>
+    <br><br><br><br><br><br><br>
+        
+      </section>
+  </body>
+</html>
